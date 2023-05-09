@@ -11,31 +11,31 @@ int main() {
 
     Chat chat;
 
-    // Регистрация пользователей
+    // Р РµРіРёСЃС‚СЂР°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
     chat.reg(const_cast<char*>("user1"), const_cast<char*>("password1"), strlen("password1"));
     chat.reg(const_cast<char*>("user2"), const_cast<char*>("password2"), strlen("password2"));
     chat.reg(const_cast<char*>("user3"), const_cast<char*>("password3"), strlen("password3"));
 
-    // Попытка логина с верными и неверными данными
+    // РџРѕРїС‹С‚РєР° Р»РѕРіРёРЅР° СЃ РІРµСЂРЅС‹РјРё Рё РЅРµРІРµСЂРЅС‹РјРё РґР°РЅРЅС‹РјРё
     if (chat.login(const_cast<char*>("user1"), const_cast<char*>("password1"), strlen("password1"))) {
-        std::cout << "Успешный вход для пользователя1" << std::endl;
+        std::cout << "РЈСЃРїРµС€РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ1" << std::endl;
     }
     else {
-        std::cout << "Неудачный вход для пользователя1" << std::endl;
+        std::cout << "РќРµСѓРґР°С‡РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ1" << std::endl;
     }
 
     if (chat.login(const_cast<char*>("user2"), const_cast<char*>("wrongpassword"), strlen("wrongpassword"))) {
-        std::cout << "Успешный вход для пользователя2" << std::endl;
+        std::cout << "РЈСЃРїРµС€РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ2" << std::endl;
     }
     else {
-        std::cout << "Неудачный вход для пользователя2" << std::endl;
+        std::cout << "РќРµСѓРґР°С‡РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ2" << std::endl;
     }
 
     if (chat.login(const_cast<char*>("user3"), const_cast<char*>("password3"), strlen("password3"))) {
-        std::cout << "Успешный вход для пользователя3" << std::endl;
+        std::cout << "РЈСЃРїРµС€РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ3" << std::endl;
     }
     else {
-        std::cout << "Неудачный вход для пользователя3" << std::endl;
+        std::cout << "РќРµСѓРґР°С‡РЅС‹Р№ РІС…РѕРґ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ3" << std::endl;
     }
 
     return 0;
